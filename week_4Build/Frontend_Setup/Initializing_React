@@ -1,0 +1,4 @@
+npx create-react-app communiconnect-frontend
+cd communiconnect-frontend
+npm install axios
+

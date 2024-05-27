@@ -1,0 +1,6 @@
+mkdir communiconnect
+cd communiconnect
+npm init -y
+npm install express mongoose bcryptjs jsonwebtoken dotenv cors socket.io
+npm install --save-dev nodemon
+
