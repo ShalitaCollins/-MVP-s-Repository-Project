@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Remote Family Communication Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1><span style="color: white;">WELCOME TO COMMUNICONNECT PLATFORM</span></h1>
+    <p style="color: white;">
+      <strong>Enjoy by talking to your family and loved ones</strong><br>
+      <strong>Your smile is our pride</strong>
+    </p>
+  </header>
+  <main>
+    <div id="landing-page">
+      <h1>CommuniConnect</h1>
+      <p>Your connection to family and friends, anytime, anywhere.</p>
+      <button id="get-started-button">Get Started</button>
+      <section class="features">
+        <h2>Connect with Ease</h2>
+        <div class="feature">
+          <img src="VIDEO CALL.png" alt="Video Call">
+          <h3>Video Calls</h3>
+          <p>Enjoy face-to-face conversations with crystal-clear video quality.</p>
+        </div>
+        <div class="feature">
+          <img src="CALL AUDIO.png" alt="Audio Call">
+          <h3>Audio Calls</h3>
+          <p>Stay connected even when you're on the go with high-fidelity audio calls.</p>
+        </div>
+        <div class="feature">
+          <img src="MESSAGING.png" alt="Messaging">
+          <h3>Messaging</h3>
+          <p>Send instant messages, share photos, and stay in touch with your loved ones.</p>
+        </div>
+      </section>
+      <section class="benefits">
+        <h2>Why Choose CommuniConnect?</h2>
+        <ul>
+          <li>Seamless communication across devices</li>
+          <li>User-friendly interface for all ages</li>
+          <li>Reliable and secure connections</li>
+          <li>Free to use, with optional premium features</li>
+        </ul>
+      </section>
+    </div>
+    <div id="signup" style="display: none;">
+      <h2><span style="color: white;">Sign in Sir/Madam</span></h2>
+      <form id="signup-form">
+        <div>
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div>
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <div>
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" required>
+        </div>
+        <div>
+          <label for="createPassword">Create Password:</label>
+          <input type="password" id="createPassword" name="createPassword" required minlength="4">
+          <span id="passwordError" class="error"></span>
+        </div>
+        <div>
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required>
+          <span id="confirmError" class="error"></span>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="login" style="display: none;">
+      <h2><span style="color: white;">Login</span></h2>
+      <form id="login-form">
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+          <span class="hint">Your username is your first name used for signup.</span>
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Log in</button>
+      </form>
+    </div>
+    <div id="user-interface" style="display: none;">
+      <h2><span style="color: white;">Choose a communication option:</span></h2>
+      <div id="available call-options">
+        <button type="button" id="video-call-button">
+          <img src="https://images.app.goo.gl/kiCUWoJ7KgYMj6dF7" alt="Video Call">
+          Video Call
+        </button>
+        <button type="button" id="audio-call-button">
+          <img src="https://images.app.goo.gl/o84c1x3zFDA6tF6u5" alt="Audio Call">
+          Audio Call
+        </button>
+        <button type="button" id="chat-button">Chat</button>
+      </div>
+      <div id="video-call-interface" style="display: none;">
+        <video id="localVideo" autoplay muted></video>
+        <button id="hangup-video-button">Hang Up</button>
+        <button id="mute-video-button">Mute</button>
+        <button id="hide-camera-button">Hide Camera</button>
+      </div>
+      <div id="audio-call-interface" style="display: none;">
+        <audio id="localAudio" autoplay></audio>
+        <button id="hangup-audio-button">Hang Up</button>
+        <button id="mute-audio-button">Mute</button>
+      </div>
+      <div id="messaging-interface" style="display: none;">
+        <h2><span style="color: white;">Messaging</span></h2>
+        <input type="text" id="message-input" placeholder="Enter your message here...">
+        <button type="button" id="send-message-button">Send</button>
+        <div id="message-history"></div>
+        <div id="rating-interface">
+          <h3>Rate the platform:</h3>
+          <label for="rating-1">1 - Not Good</label>
+          <input type="radio" name="rating" id="rating-1" value="1">
+          <label for="rating-2">2 - Good</label>
+          <input type="radio" name="rating" id="rating-2" value="2">
+          <label for="rating-3">3 - Very Good</label>
+          <input type="radio" name="rating" id="rating-3" value="3">
+          <label for="rating-4">4 - Excellent</label>
+          <input type="radio" name="rating" id="rating-4" value="4">
+          <label for="rating-5">5 - Brilliant</label>
+          <input type="radio" name="rating" id="rating-5" value="5">
+          <button type="button" id="submit-rating">Submit</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
