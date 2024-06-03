@@ -1,6 +1,77 @@
 body {
+  .cover-image {
+    background-image: url('https://replit.com/@nyarwayashalita/communiconnect-project-1#background%20pic.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 3em;
+    margin: 0.2em 0;
+  }
+
+  header p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  #about, #features {
+    background: #858080;
+    margin-top: -5px;
+  }
+
+
+  
   font-family: 'Roboto', sans-serif; /* Choose a font you like */
-  background-color: #f4f4f4; /* Light gray background */
+  background-color: #c2bcbc; /* Light gray background */
   color: #333; /* Dark gray text color */
   display: flex;
   flex-direction: column;
@@ -55,7 +126,7 @@ p {
 }
 
 .feature {
-  background-color: #fff; /* White feature boxes */
+  background-color: #998585; /* White feature boxes */
   border-radius: 10px; /* Rounded corners */
   margin: 10px;
   padding: 20px;
@@ -113,7 +184,7 @@ footer {
 }
 
 #signup h2, #login h2 {
-  color: #fff;
+  color: #d0cdcd;
   margin-bottom: 20px;
 }
 
@@ -124,12 +195,12 @@ footer {
 }
 
 #signup label, #login label {
-  color: #fff;
+  color: #dcd5d5;
 }
 
 #signup input, #login input {
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #cabfbf;
   border-radius: 4px;
   transition: border-color 0.3s ease; /* Smooth transition for focus */
 }
@@ -140,7 +211,7 @@ footer {
 }
 
 #signup button, #login button {
-  background-color: #2ecc71; /* Green button */
+  background-color: #645bec; /* Green button */
   color: #fff;
   padding: 10px 20px;
   border: none;
