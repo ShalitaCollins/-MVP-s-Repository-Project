@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Remote Family Communication Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1><span style="color: white;">WELCOME TO COMMUNICONNECT PLATFORM</span></h1>
+    <p style="color: white;">
+      <strong>Enjoy by talking to your family and loved ones</strong><br>
+      <strong>Your smile is our pride</strong>
+    </p>
+  </header>
+  <main>
+    <div id="landing-page">
+      <h1>CommuniConnect</h1>
+      <p>Your connection to family and friends, anytime, anywhere.</p>
+      <!-- Updated button text and link -->
+      <a href="https://8f1f921b-77dd-45a1-ad9e-29dc456bfb30-00-3ekllrdmczqey.spock.replit.dev/"
+        id="get-started-button">Visit our platform here</a>
+      <section class="features">
+        <h2>Connect with Ease</h2>
+        <div class="feature">
+          <img src="VIDEO CALL.png" alt="Video Call">
+          <h3>Video Calls</h3>
+          <p>Enjoy face-to-face conversations with crystal-clear video quality.</p>
+        </div>
+        <div class="feature">
+          <img src="CALL AUDIO.png" alt="Audio Call">
+          <h3>Audio Calls</h3>
+          <p>Stay connected even when you're on the go with high-fidelity audio calls.</p>
+        </div>
+        <div class="feature">
+          <img src="MESSAGING.png" alt="Messaging">
+          <h3>Messaging</h3>
+          <p>Send instant messages, share photos, and stay in touch with your loved ones.</p>
+        </div>
+      </section>
+      <section class="benefits">
+        <h2>Why Choose CommuniConnect?</h2>
+        <ul>
+          <li>Seamless communication across devices</li>
+          <li>User-friendly interface for all ages</li>
+          <li>Reliable and secure connections</li>
+          <li>Free to use, with optional premium features</li>
+        </ul>
+      </section>
+
+      <section id="about">
+        <h2>About CommuniConnect</h2>
+        <p>This project was inspired by [your personal story about the need for this project]. I wanted to create a
+          platform that [explain your motivation and goals].
+          This is a portfolio project for Holberton School, a program that has helped me develop my skills in [mention
+          relevant skills].
+        </p>
+        <p>You can find the project repository on GitHub: <a
+            href="https://github.com/ShalitaCollins/MVP-Repository-Project">CommuniConnect GitHub</a></p>
+        <h3>reach out to me</h3>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/shalita-collin-nyarwaya-301591289/">NYARWAYA Shalita Collin</a>
+            <ul>
+              <li><a href="https://github.com/ShalitaCollins">GitHub</a></li>
+              <li><a href="https://x.com/ShalitaCollin">Twitter</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div id="signup" style="display: none;">
+      <h2><span style="color: white;">Sign in Sir/Madam</span></h2>
+      <form id="signup-form">
+        <div>
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div>
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <div>
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" required>
+        </div>
+        <div>
+          <label for="createPassword">Create Password:</label>
+          <input type="password" id="createPassword" name="createPassword" required minlength="4">
+          <span id="passwordError" class="error"></span>
+        </div>
+        <div>
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required>
+          <span id="confirmError" class="error"></span>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="login" style="display: none;">
+      <h2><span style="color: white;">Login</span></h2>
+      <form id="login-form">
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+          <span class="hint">Your username is your first name used for signup.</span>
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Log in</button>
+      </form>
+    </div>
+    <div id="user-interface" style="display: none;">
+      <h2><span style="color: white;">Choose a communication option:</span></h2>
+      <div id="available call-options">
+
+        <button type="button" id="video-call-button">
+          <img src="VIDEO CALL.png" alt="Video Call">
+          Video Call
+        </button>
+
+
+        <button type="button" id="audio-call-button">
+          <img src="CALL AUDIO.png" alt="Audio Call">
+          Audio Call
+        </button>
+
+
+        <button type="button" id="chat-button">
+          <img src="MESSAGING.png" alt="Message">
+          chat</button>
+      </div>
+      <div id="video-call-interface" style="display: none;">
+        <video id="localVideo" autoplay muted></video>
+        <button id="hangup-video-button">Hang Up</button>
+        <button id="mute-video-button">Mute</button>
+        <button id="hide-camera-button">Hide Camera</button>
+      </div>
+      <div id="audio-call-interface" style="display: none;">
+        <audio id="localAudio" autoplay></audio>
+        <button id="hangup-audio-button">Hang Up</button>
+        <button id="mute-audio-button">Mute</button>
+      </div>
+      <div id="messaging-interface" style="display: none;">
+        <h2><span style="color: white;">Messaging</span></h2>
+      </div>
+  </main>
+</body>
+
+</html>
