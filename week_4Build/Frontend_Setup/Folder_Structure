@@ -1,8 +1,0 @@
-src/
-|-- components/
-|   |-- Home.js
-|   |-- Login.js
-|   |-- Register.js
-|-- App.js
-|-- index.js
-
