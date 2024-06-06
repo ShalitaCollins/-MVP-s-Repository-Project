@@ -370,7 +370,7 @@ footer {
   background-size: cover;
   background-position: center;
   min-height: 100vh; /* Make the background cover the full viewport height */
-  color: #a39595; /* White text color for better visibility on the background */
+  color: #291f1f; /* White text color for better visibility on the background */
   display: flex;
   flex-direction: column;
   justify-content: center;
